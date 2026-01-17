@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Secret | Premium Course</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <style>
+        body { background-color: #0f172a; color: white; }
+        .glass { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+        }
+        .gradient-text { 
+            background: linear-gradient(90deg, #38bdf8, #818cf8); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <div class="max-w-4xl mx-auto px-6 py-20 text-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+            Stop Overpaying for <span class="gradient-text">Insurance</span>
+        </h1>
+        <p class="text-gray-400 text-xl mb-10 max-w-2xl mx-auto">
+            Access the masterclass that reveals how to manipulate risk algorithms and secure the lowest quotes possible.
+        </p>
+
+        <div class="glass p-8 rounded-3xl max-w-md mx-auto shadow-2xl">
+            <h3 class="text-2xl font-bold mb-2">Full Course Access</h3>
+            <div class="text-gray-400 mb-6">Learn the secrets today.</div>
+            
+            <ul class="text-left space-y-4 mb-8 text-sm text-gray-300">
+                <li class="flex items-center">
+                    <span class="text-blue-400 mr-2">✓</span> Hidden "Risk Profile" tweaks
+                </li>
+                <li class="flex items-center">
+                    <span class="text-blue-400 mr-2">✓</span> Comparison engine hacks
+                </li>
+                <li class="flex items-center">
+                    <span class="text-blue-400 mr-2">✓</span> Negotiation scripts for renewals
+                </li>
+            </ul>
+
+            <div class="flex justify-center">
+                <stripe-buy-button
+                  buy-button-id="buy_btn_1Sqij5027cM0jhugSW4RbAzq"
+                  publishable-key="pk_test_51Sqiak027cM0jhugZ3hEz5Lvfkqqvrk5STcB3gJhCtbyOuRYEfno6hcsu3eIDDRxqmIzfvq1vXkVGAqvl5TDUdQ000jotQcgpg"
+                >
+                </stripe-buy-button>
+            </div>
+            
+            <p class="mt-6 text-xs text-gray-500 uppercase tracking-widest">Secure Encryption via Stripe</p>
+        </div>
+    </div>
+
+</body>
+</html>
